@@ -1,0 +1,5 @@
+![Screenshot (819)](https://github.com/YannKamche/Movie-slide-animation/assets/122357201/19d579cb-2bc2-44e6-ba94-0eb202c6f98b)
+![Screenshot (820)](https://github.com/YannKamche/Movie-slide-animation/assets/122357201/dde152a0-044f-4e5b-aedd-a07b10b350eb)
+![Screenshot (821)](https://github.com/YannKamche/Movie-slide-animation/assets/122357201/15d78ead-674f-4637-a347-bab54387be11)
+![Screenshot (817)](https://github.com/YannKamche/Movie-slide-animation/assets/122357201/773a2fd2-c699-4bd4-9409-79466e25b358)
+![Screenshot (818)](https://github.com/YannKamche/Movie-slide-animation/assets/122357201/6c18096a-2890-4b0e-b77d-e55b4002a4cb)
