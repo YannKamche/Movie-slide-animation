@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+
+}
+
+
+.container .slide .item {
+    width: 165px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translate(20%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .item:nth-child(3) {
+    left: 50%;
+} 
+
+.slide .item:nth-child(4) {
+    left: calc(50% + 190px);
+}
+
+.slide .item:nth-child(5) {
+    left: calc(50% + 400px);
+}
+
+.slide .item:nth-child(n + 6) {
+    left: calc(50% + 650px);
+    opacity: 0;
+}
+
+.item .content {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #eee;
+    transform: translate(0, -50%);
+    font-family: 'Poppins';
+    display: none;
+}
+
+.slide .item:nth-child(2) .content {
+    display: block;
+}
+
+.content .name {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+    
+}
+
+.content .des {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+
+.content button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+    background: #505050; /* New background color */
+    color: #eee; /* New text color */
+    transition: 0.5s ease-in-out;
+    font-size: 15px;
+
+}
+
+.content button:hover {
+    color: #505050; /* New text color on hover */
+    background-color: #eee; /* New background color on hover */
+}
+
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    
+}
+
+.button button {
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 2px;
+    border: 1px solid #000;
+    transition: 0.3s ease-in-out;
+     background: #505050; /* New background color */
+    color: #eee; /* New text color */
+}
+
+.button button:hover {
+     color: #505050; /* New text color on hover */
+    background-color: #eee; /* New background color on hover */
+
+}
+
+.fa-solid {
+    font-size: 20px;
+    color: black;
+   
+}
